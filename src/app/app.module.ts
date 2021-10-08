@@ -8,19 +8,22 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 import { AppComponent } from './app.component';
 import { ShowTotalNumbersComponent } from 'src/app/components/show-total-numbers/show-total-numbers.components';
 import { HeaderComponent } from './components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthInfoComponent } from './components/auth-info/auth-info.component';
+import { LeftPanelComponent } from './components/left-panel/left-panel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ShowTotalNumbersComponent,
     HeaderComponent,
-    AuthInfoComponent
+    AuthInfoComponent,
+    LeftPanelComponent
   ],
   exports: [
     ShowTotalNumbersComponent
@@ -35,6 +38,7 @@ import { AuthInfoComponent } from './components/auth-info/auth-info.component';
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
+    MatSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
