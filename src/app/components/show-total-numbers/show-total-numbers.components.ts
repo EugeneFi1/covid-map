@@ -36,5 +36,4 @@ export class ShowTotalNumbersComponent implements OnInit, OnDestroy {
     public ngOnDestroy(): void {
         this.subscription.unsubscribe();
     }
-
 }
