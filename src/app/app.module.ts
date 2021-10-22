@@ -9,6 +9,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatListModule} from '@angular/material/list';
 
 import { AppComponent } from './app.component';
 import { ShowTotalNumbersComponent } from 'src/app/components/show-total-numbers/show-total-numbers.components';
@@ -16,6 +18,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthInfoComponent } from './components/auth-info/auth-info.component';
 import { LeftPanelComponent } from './components/left-panel/left-panel.component';
+import { TotalInfoComponent } from './components/total-info/total-info.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,8 @@ import { LeftPanelComponent } from './components/left-panel/left-panel.component
     ShowTotalNumbersComponent,
     HeaderComponent,
     AuthInfoComponent,
-    LeftPanelComponent
+    LeftPanelComponent,
+    TotalInfoComponent
   ],
   exports: [
     ShowTotalNumbersComponent
@@ -39,6 +43,8 @@ import { LeftPanelComponent } from './components/left-panel/left-panel.component
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
+    MatMenuModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,13 +11,7 @@
 </mat-toolbar>
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="side">
-    <p>In progress</p>
+    <app-left-panel></app-left-panel>
   </mat-drawer>
-  <div class="example-sidenav-content">
-    <show-total-numbers country="Ukraine" countryCode="ua"></show-total-numbers>
-    <show-total-numbers country="USA" countryCode="us"></show-total-numbers>
-    <show-total-numbers country="Italy" countryCode="it"></show-total-numbers>
-    <show-total-numbers country="Australia" countryCode="au"></show-total-numbers>
-    <show-total-numbers country="Poland" countryCode="pl"></show-total-numbers>
-  </div>
+    <app-total-info></app-total-info>
 </mat-drawer-container>
