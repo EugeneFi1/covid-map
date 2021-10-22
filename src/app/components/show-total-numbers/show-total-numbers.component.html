@@ -1,15 +1,15 @@
 <mat-card class="show-total-inform">
-    <mat-card-title-group>
-        <mat-card-subtitle>Total info</mat-card-subtitle>
-        <mat-card-title>{{ _location }}</mat-card-title>
-        <img mat-card-sm-image [src]='_flagImageUrl'>
-    </mat-card-title-group>
-    <mat-card-content>{{ _totalNumber }}</mat-card-content>
-    <mat-card-footer>
-        <mat-progress-bar 
-            *ngIf="loading" 
-            mode="indeterminate"
-        >
-        </mat-progress-bar>
-    </mat-card-footer>
-  </mat-card>
+  <mat-card-title-group>
+    <mat-card-subtitle>Total info</mat-card-subtitle>
+    <mat-card-title>{{ _location }}</mat-card-title>
+    <img mat-card-sm-image [src]='_flagImageUrl'>
+  </mat-card-title-group>
+  <mat-card-content>{{ _totalNumber }}</mat-card-content>
+  <mat-card-footer>
+    <mat-progress-bar
+      *ngIf="loading"
+      mode="indeterminate"
+    >
+    </mat-progress-bar>
+  </mat-card-footer>
+</mat-card>

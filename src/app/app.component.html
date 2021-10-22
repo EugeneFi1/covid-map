@@ -1,42 +1,23 @@
-<!-- <mat-toolbar color="primary">
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-        <mat-icon>menu</mat-icon>
-      </button>
-    <span>COVID map</span>
-    <span style="width: 80%;"></span>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-        <mat-icon>info</mat-icon>
-      </button>
-  </mat-toolbar>
-<div style="display: flex; flex-wrap: wrap;">
+<mat-toolbar color="primary">
+  <button (click)="drawer.toggle()" mat-icon-button class="example-icon"
+          aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>COVID map</span>
+  <span style="width: 80%;"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>info</mat-icon>
+  </button>
+</mat-toolbar>
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <p>In progress</p>
+  </mat-drawer>
+  <div class="example-sidenav-content">
     <show-total-numbers country="Ukraine" countryCode="ua"></show-total-numbers>
     <show-total-numbers country="USA" countryCode="us"></show-total-numbers>
     <show-total-numbers country="Italy" countryCode="it"></show-total-numbers>
     <show-total-numbers country="Australia" countryCode="au"></show-total-numbers>
     <show-total-numbers country="Poland" countryCode="pl"></show-total-numbers>
-</div> -->
-
-<mat-toolbar color="primary">
-    <button (click)="drawer.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-        <mat-icon>menu</mat-icon>
-      </button>
-    <span>COVID map</span>
-    <span style="width: 80%;"></span>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-        <mat-icon>info</mat-icon>
-      </button>
-  </mat-toolbar>
-<mat-drawer-container class="example-container" autosize>
-    <mat-drawer #drawer class="example-sidenav" mode="side">
-      <p>In progress</p>
-    </mat-drawer>
-  
-    <div class="example-sidenav-content">
-            <show-total-numbers country="Ukraine" countryCode="ua"></show-total-numbers>
-            <show-total-numbers country="USA" countryCode="us"></show-total-numbers>
-            <show-total-numbers country="Italy" countryCode="it"></show-total-numbers>
-            <show-total-numbers country="Australia" countryCode="au"></show-total-numbers>
-            <show-total-numbers country="Poland" countryCode="pl"></show-total-numbers>
-    </div>
-  
-  </mat-drawer-container>
+  </div>
+</mat-drawer-container>
