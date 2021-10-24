@@ -1,17 +1,29 @@
 <mat-list role="list">
     <mat-list-item role="listitem">
         <button mat-button>
-            Total Info
+            <span 
+                appSwitchTextColor="blue"
+            >
+                Total Info
+            </span>
         </button>
     </mat-list-item>
     <mat-list-item role="listitem">
         <button mat-button>
-            By Region
+            <span
+                appSwitchTextColor="blue"
+            >
+                By Region
+            </span>
         </button>
     </mat-list-item>
-    <mat-list-item role="listitem">
+    <mat-list-item role="listitem" *appIfnot="false">
         <button mat-button>
-            About
+            <span
+                appSwitchTextColor="blue"
+            >
+                About
+            </span>
         </button>
     </mat-list-item>
 </mat-list>

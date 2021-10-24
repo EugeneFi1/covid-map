@@ -19,6 +19,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthInfoComponent } from './components/auth-info/auth-info.component';
 import { LeftPanelComponent } from './components/left-panel/left-panel.component';
 import { TotalInfoComponent } from './components/total-info/total-info.component';
+import { StyleDirective } from './directives/style.directive';
+import { IfnotDirective } from './directives/ifnot.directive';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { TotalInfoComponent } from './components/total-info/total-info.component
     HeaderComponent,
     AuthInfoComponent,
     LeftPanelComponent,
-    TotalInfoComponent
+    TotalInfoComponent,
+    StyleDirective,
+    IfnotDirective,
   ],
   exports: [
     ShowTotalNumbersComponent
