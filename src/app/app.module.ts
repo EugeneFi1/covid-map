@@ -21,6 +21,7 @@ import { LeftPanelComponent } from './components/left-panel/left-panel.component
 import { TotalInfoComponent } from './components/total-info/total-info.component';
 import { StyleDirective } from './directives/style.directive';
 import { IfnotDirective } from './directives/ifnot.directive';
+import { MultiplePipe } from './pipes/multiply.pipe';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { IfnotDirective } from './directives/ifnot.directive';
     TotalInfoComponent,
     StyleDirective,
     IfnotDirective,
+    MultiplePipe,
   ],
   exports: [
     ShowTotalNumbersComponent
