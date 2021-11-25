@@ -22,6 +22,13 @@ import { TotalInfoComponent } from './components/total-info/total-info.component
 import { StyleDirective } from './directives/style.directive';
 import { IfnotDirective } from './directives/ifnot.directive';
 import { MultiplePipe } from './pipes/multiply.pipe';
+import { Routes, RouterModule } from '@angular/router';
+
+const routes: Routes = [
+  {path: '', component: TotalInfoComponent},
+  {path: 'all', component: TotalInfoComponent},
+  {path: 'about', component: AuthInfoComponent},
+];
 
 @NgModule({
   declarations: [
@@ -36,7 +43,8 @@ import { MultiplePipe } from './pipes/multiply.pipe';
     MultiplePipe,
   ],
   exports: [
-    ShowTotalNumbersComponent
+    ShowTotalNumbersComponent,
+    RouterModule,
   ],
   imports: [
     BrowserModule,
@@ -51,6 +59,7 @@ import { MultiplePipe } from './pipes/multiply.pipe';
     MatSidenavModule,
     MatMenuModule,
     MatListModule,
+    RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent]

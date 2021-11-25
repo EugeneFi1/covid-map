@@ -6,33 +6,12 @@
   <span>COVID map</span>
   <span style="width: 80%;"></span>
   <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>info</mat-icon>
+    <mat-icon routerLink="/about">info</mat-icon>
   </button>
 </mat-toolbar>
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="side">
     <app-left-panel></app-left-panel>
   </mat-drawer>
-    <app-total-info></app-total-info>
-    <!-- Number pipe  -->
-    <!-- {{ e | number:"1.1-5" }} <br>
-    {{ e | number:"3.1-2" }} <br>
-    {{ e | number:"1.0-0" }} -->
-
-    <!-- <div>String pipe</div>  
-    {{ str | uppercase | lowercase | titlecase }} <br>
-    {{ str | titlecase | slice:1:-2 }} -->
-
-    <!-- <div>Date pipe</div>
-    {{ date | date:'fullDate' }} -->
-
-    <!-- {{ float }} <br>
-    {{ float | percent }} <br>
-    {{ float | currency }} -->
-
-    <!-- <pre>{{ obj | json }}</pre> -->
-    {{ 10 | mult }} <br>
-    {{ 10 | mult:2 }} <br>
-    {{ 10 | mult:3 }} <br>
-    {{ 10 | mult:5 }} <br>
+    <router-outlet></router-outlet>
 </mat-drawer-container>
