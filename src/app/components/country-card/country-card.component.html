@@ -1,0 +1,19 @@
+<mat-card 
+  class="show-total-inform"
+  routerLink="/detail"
+  [queryParams]="{'location': location}"
+>
+  <mat-card-title-group>
+    <mat-card-subtitle>Total info</mat-card-subtitle>
+    <mat-card-title>{{ location }}</mat-card-title>
+    <img mat-card-sm-image [src]='flagImageUrl'>
+  </mat-card-title-group>
+  <mat-card-content>{{ totalNumber }}</mat-card-content>
+  <mat-card-footer>
+    <mat-progress-bar
+      *ngIf="loading"
+      mode="indeterminate"
+    >
+    </mat-progress-bar>
+  </mat-card-footer>
+</mat-card>   

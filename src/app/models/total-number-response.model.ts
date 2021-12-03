@@ -5,5 +5,5 @@ export interface TotalNumberResponse {
         lastChecked: string;
         lastReported: string;
         location: string;
-    }
+    };
 }
