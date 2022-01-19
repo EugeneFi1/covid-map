@@ -6,8 +6,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./total-info.component.less']
 })
 export class TotalInfoComponent implements OnInit {
-
   constructor() { }
+
+  public countries = [
+    {
+      country: 'Ukraine',
+      countryCode: 'ua'
+    },
+    {
+      country: 'USA',
+      countryCode: 'us'
+    },
+    {
+      country: 'Italy',
+      countryCode: 'it'
+    },
+    {
+      country: 'Australia',
+      countryCode: 'au'
+    },
+    {
+      country: 'Poland',
+      countryCode: 'pl'
+    },
+  ];
 
   ngOnInit(): void {
   }

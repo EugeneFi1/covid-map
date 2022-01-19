@@ -1,7 +1,7 @@
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import { Observable } from "rxjs";
-import { TotalNumberResponse } from "../models/total-number-response.model";
+import { Observable } from 'rxjs';
+import { TotalNumberResponse } from '../models/total-number-response.model';
 
 @Injectable({
     providedIn: 'root'
@@ -19,6 +19,6 @@ export class HttpRestService {
             params: {
                 country
             }
-        })
+        });
     }
 }
